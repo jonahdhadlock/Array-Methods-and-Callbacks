@@ -38,8 +38,8 @@ console.log(getFinals(fifaData));
 function getYears(getFinals) {
     const years = [];
     const filteredGames = getFinals(fifaData);
-    for (let i = 0; i < filteredGames.length; i++) {
-        years.push(filteredGames[i].Year);
+    for (const game of filteredGames) {
+        years.push(game.Year);
     }
     return years;
 }
