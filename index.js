@@ -96,8 +96,7 @@ function getAverageGoals(data) {
     const numberOfGames = data.length;
     const averageHomeTeamGoals = totalGoalsHome / numberOfGames;
     const averageAwayTeamGoals = totalGoalsAway / numberOfGames;
-    const totalAverages = [averageHomeTeamGoals, averageAwayTeamGoals];
-    return "Home Team Average Goals " + averageHomeTeamGoals + " and " + "Away Team Average Goals " + averageAwayTeamGoals;
+    return "Home Team Average Goals is " + averageHomeTeamGoals + " and " + "Away Team Average Goals is " + averageAwayTeamGoals;
 };
 
 console.log(getAverageGoals(fifaData));
